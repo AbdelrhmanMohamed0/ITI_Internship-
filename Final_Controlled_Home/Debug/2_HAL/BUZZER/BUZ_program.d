@@ -1,0 +1,16 @@
+2_HAL/BUZZER/BUZ_program.o 2_HAL/BUZZER/BUZ_program.o:  \
+ ../2_HAL/BUZZER/BUZ_program.c ../2_HAL/BUZZER/../../4_LIB/STD_TYPES.h \
+  ../2_HAL/BUZZER/../../4_LIB/BIT_MATH.h \
+  ../2_HAL/BUZZER/../../4_LIB/ERROR_STATES.h \
+  ../2_HAL/BUZZER/../../1_MCAL/DIO/DIO_INTERFACE.h \
+  ../2_HAL/BUZZER/BUZ_interface.h
+
+../2_HAL/BUZZER/../../4_LIB/STD_TYPES.h:
+
+../2_HAL/BUZZER/../../4_LIB/BIT_MATH.h:
+
+../2_HAL/BUZZER/../../4_LIB/ERROR_STATES.h:
+
+../2_HAL/BUZZER/../../1_MCAL/DIO/DIO_INTERFACE.h:
+
+../2_HAL/BUZZER/BUZ_interface.h:

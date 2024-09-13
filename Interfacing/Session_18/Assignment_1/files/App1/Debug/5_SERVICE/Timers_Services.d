@@ -1,0 +1,21 @@
+5_SERVICE/Timers_Services.o 5_SERVICE/Timers_Services.o:  \
+ ../5_SERVICE/Timers_Services.c ../5_SERVICE/../4_LIB/STD_TYPES.h \
+  ../5_SERVICE/../4_LIB/BIT_MATH.h ../5_SERVICE/../4_LIB/ERROR_STATES.h \
+  ../5_SERVICE/../1_MCAL/DIO/DIO_INTERFACE.h \
+  ../5_SERVICE/../1_MCAL/EXTI/EXTI_PP/EXTI_INTERFACE.h \
+  ../5_SERVICE/../1_MCAL/TIMER/TIMER_interface.h \
+  ../5_SERVICE/Timers_Services.h
+
+../5_SERVICE/../4_LIB/STD_TYPES.h:
+
+../5_SERVICE/../4_LIB/BIT_MATH.h:
+
+../5_SERVICE/../4_LIB/ERROR_STATES.h:
+
+../5_SERVICE/../1_MCAL/DIO/DIO_INTERFACE.h:
+
+../5_SERVICE/../1_MCAL/EXTI/EXTI_PP/EXTI_INTERFACE.h:
+
+../5_SERVICE/../1_MCAL/TIMER/TIMER_interface.h:
+
+../5_SERVICE/Timers_Services.h:

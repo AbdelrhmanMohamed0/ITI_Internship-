@@ -1,0 +1,474 @@
+Archive member included because of file (symbol)
+
+a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+                              ./3_APP/App_1/App.o (__udivmodqi4)
+a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./2_HAL/Seven_segment/Seven_segment_LK/Seven_segment_CONFIG.o (__do_copy_data)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./3_APP/App_1/App.o
+LOAD ./2_HAL/Seven_segment/Seven_segment_LK/Seven_segment_CONFIG.o
+LOAD ./2_HAL/Seven_segment/Seven_segment_LK/Seven_segment_PROGRAM.o
+LOAD ./2_HAL/SWITCH/SWITCH_CONFIG.o
+LOAD ./2_HAL/SWITCH/SWITCH_PROGRAM.o
+LOAD ./2_HAL/LED/LED_CONFIG.o
+LOAD ./2_HAL/LED/LED_PROGRAM.o
+LOAD ./1_MCAL/DIO/DIO_PROGRAM.o
+LOAD a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x291c
+ *(.vectors)
+ .vectors       0x00000000       0x54 a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000076        0x8 a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x0000007e        0x4 a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x0000007e                __vector_1
+                0x0000007e                __vector_12
+                0x0000007e                __bad_interrupt
+                0x0000007e                __vector_6
+                0x0000007e                __vector_3
+                0x0000007e                __vector_11
+                0x0000007e                __vector_13
+                0x0000007e                __vector_17
+                0x0000007e                __vector_19
+                0x0000007e                __vector_7
+                0x0000007e                __vector_5
+                0x0000007e                __vector_4
+                0x0000007e                __vector_9
+                0x0000007e                __vector_2
+                0x0000007e                __vector_15
+                0x0000007e                __vector_8
+                0x0000007e                __vector_14
+                0x0000007e                __vector_10
+                0x0000007e                __vector_16
+                0x0000007e                __vector_18
+                0x0000007e                __vector_20
+ .text          0x00000082        0x0 ./3_APP/App_1/App.o
+ .text          0x00000082        0x0 ./2_HAL/Seven_segment/Seven_segment_LK/Seven_segment_CONFIG.o
+ .text          0x00000082        0x0 ./2_HAL/Seven_segment/Seven_segment_LK/Seven_segment_PROGRAM.o
+ .text          0x00000082        0x0 ./2_HAL/SWITCH/SWITCH_CONFIG.o
+ .text          0x00000082        0x0 ./2_HAL/SWITCH/SWITCH_PROGRAM.o
+ .text          0x00000082        0x0 ./2_HAL/LED/LED_CONFIG.o
+ .text          0x00000082        0x0 ./2_HAL/LED/LED_PROGRAM.o
+ .text          0x00000082        0x0 ./1_MCAL/DIO/DIO_PROGRAM.o
+ .text          0x00000082        0x0 a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+ .text          0x00000082        0x0 a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000082        0x0 a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000082                . = ALIGN (0x2)
+ *(.text.*)
+ .text.main     0x00000082       0x86 ./3_APP/App_1/App.o
+                0x00000082                main
+ .text.Seven_Segment_enuInit
+                0x00000108      0x4c4 ./2_HAL/Seven_segment/Seven_segment_LK/Seven_segment_PROGRAM.o
+                0x00000108                Seven_Segment_enuInit
+ .text.Seven_Segment_enuDisplayNum
+                0x000005cc      0x77a ./2_HAL/Seven_segment/Seven_segment_LK/Seven_segment_PROGRAM.o
+                0x000005cc                Seven_Segment_enuDisplayNum
+ .text.Seven_Segment_enuEnableCommon
+                0x00000d46      0x19c ./2_HAL/Seven_segment/Seven_segment_LK/Seven_segment_PROGRAM.o
+                0x00000d46                Seven_Segment_enuEnableCommon
+ .text.Seven_Segment_enuDisableCommon
+                0x00000ee2      0x19c ./2_HAL/Seven_segment/Seven_segment_LK/Seven_segment_PROGRAM.o
+                0x00000ee2                Seven_Segment_enuDisableCommon
+ .text.Seven_Segment_enuEnableDot
+                0x0000107e      0x19c ./2_HAL/Seven_segment/Seven_segment_LK/Seven_segment_PROGRAM.o
+                0x0000107e                Seven_Segment_enuEnableDot
+ .text.Seven_Segment_enuDisableDot
+                0x0000121a      0x19c ./2_HAL/Seven_segment/Seven_segment_LK/Seven_segment_PROGRAM.o
+                0x0000121a                Seven_Segment_enuDisableDot
+ .text.Seven_Segment_enuClearDisplay
+                0x000013b6      0x5a8 ./2_HAL/Seven_segment/Seven_segment_LK/Seven_segment_PROGRAM.o
+                0x000013b6                Seven_Segment_enuClearDisplay
+ .text.SWITCH_EnuInit
+                0x0000195e       0xea ./2_HAL/SWITCH/SWITCH_PROGRAM.o
+                0x0000195e                SWITCH_EnuInit
+ .text.SWITCH_EnuGetStates
+                0x00001a48       0x5a ./2_HAL/SWITCH/SWITCH_PROGRAM.o
+                0x00001a48                SWITCH_EnuGetStates
+ .text.LED_EnuInit
+                0x00001aa2      0x280 ./2_HAL/LED/LED_PROGRAM.o
+                0x00001aa2                LED_EnuInit
+ .text.LED_EnuTurnON
+                0x00001d22       0x76 ./2_HAL/LED/LED_PROGRAM.o
+                0x00001d22                LED_EnuTurnON
+ .text.LED_EnuTurnOFF
+                0x00001d98       0x76 ./2_HAL/LED/LED_PROGRAM.o
+                0x00001d98                LED_EnuTurnOFF
+ .text.DIO_Enu_Init
+                0x00001e0e       0x54 ./1_MCAL/DIO/DIO_PROGRAM.o
+                0x00001e0e                DIO_Enu_Init
+ .text.DIO_Enu_SetPortDirection
+                0x00001e62       0x9a ./1_MCAL/DIO/DIO_PROGRAM.o
+                0x00001e62                DIO_Enu_SetPortDirection
+ .text.DIO_Enu_SetPortValue
+                0x00001efc       0x9a ./1_MCAL/DIO/DIO_PROGRAM.o
+                0x00001efc                DIO_Enu_SetPortValue
+ .text.DIO_Enu_SetPinDirection
+                0x00001f96      0x1d8 ./1_MCAL/DIO/DIO_PROGRAM.o
+                0x00001f96                DIO_Enu_SetPinDirection
+ .text.DIO_Enu_SetPinValue
+                0x0000216e      0x1d8 ./1_MCAL/DIO/DIO_PROGRAM.o
+                0x0000216e                DIO_Enu_SetPinValue
+ .text.DIO_Enu_TogPortValue
+                0x00002346       0xae ./1_MCAL/DIO/DIO_PROGRAM.o
+                0x00002346                DIO_Enu_TogPortValue
+ .text.DIO_Enu_TogPinValue
+                0x000023f4      0x11c ./1_MCAL/DIO/DIO_PROGRAM.o
+                0x000023f4                DIO_Enu_TogPinValue
+ .text.DIO_Enu_GetPortValue
+                0x00002510       0xbe ./1_MCAL/DIO/DIO_PROGRAM.o
+                0x00002510                DIO_Enu_GetPortValue
+ .text.DIO_Enu_GetPinValue
+                0x000025ce      0x13c ./1_MCAL/DIO/DIO_PROGRAM.o
+                0x000025ce                DIO_Enu_GetPinValue
+ .text.DIO_Enu_WriteHighNibbles
+                0x0000270a       0xfc ./1_MCAL/DIO/DIO_PROGRAM.o
+                0x0000270a                DIO_Enu_WriteHighNibbles
+ .text.DIO_Enu_WriteLowNibbles
+                0x00002806       0xfa ./1_MCAL/DIO/DIO_PROGRAM.o
+                0x00002806                DIO_Enu_WriteLowNibbles
+ .text.libgcc   0x00002900       0x18 a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+                0x00002900                __udivmodqi4
+ .text.libgcc   0x00002918        0x0 a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00002918        0x0 a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00002918                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00002918        0x0 a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00002918                exit
+                0x00002918                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00002918        0x4 a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000291c                _etext = .
+
+.data           0x00800060       0x52 load address 0x0000291c
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./3_APP/App_1/App.o
+ .data          0x00800060        0x0 ./2_HAL/Seven_segment/Seven_segment_LK/Seven_segment_CONFIG.o
+ .data          0x00800060        0x0 ./2_HAL/Seven_segment/Seven_segment_LK/Seven_segment_PROGRAM.o
+ .data          0x00800060        0x0 ./2_HAL/SWITCH/SWITCH_CONFIG.o
+ .data          0x00800060        0x0 ./2_HAL/SWITCH/SWITCH_PROGRAM.o
+ .data          0x00800060        0x0 ./2_HAL/LED/LED_CONFIG.o
+ .data          0x00800060        0x0 ./2_HAL/LED/LED_PROGRAM.o
+ .data          0x00800060        0x0 ./1_MCAL/DIO/DIO_PROGRAM.o
+ .data          0x00800060        0x0 a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+ .data          0x00800060        0x0 a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ *(.data*)
+ .data.SEG_Au8NumDisplay
+                0x00800060        0xa ./2_HAL/Seven_segment/Seven_segment_LK/Seven_segment_CONFIG.o
+ .data.SEVSEG_AstrSegConfig
+                0x0080006a       0x26 ./2_HAL/Seven_segment/Seven_segment_LK/Seven_segment_CONFIG.o
+                0x0080006a                SEVSEG_AstrSegConfig
+ .data.SEG_Au8NumDisplay
+                0x00800090        0xa ./2_HAL/Seven_segment/Seven_segment_LK/Seven_segment_PROGRAM.o
+ .data.Switch_Arr_Stru_SwitchState
+                0x0080009a        0x3 ./2_HAL/SWITCH/SWITCH_CONFIG.o
+                0x0080009a                Switch_Arr_Stru_SwitchState
+ .data.LED_Arr_Str_LedConfig
+                0x0080009d       0x14 ./2_HAL/LED/LED_CONFIG.o
+                0x0080009d                LED_Arr_Str_LedConfig
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x008000b2                . = ALIGN (0x2)
+ *fill*         0x008000b1        0x1 00
+                0x008000b2                _edata = .
+                0x008000b2                PROVIDE (__data_end, .)
+
+.bss            0x008000b2        0x0
+                0x008000b2                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x008000b2        0x0 a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x008000b2        0x0 ./3_APP/App_1/App.o
+ .bss           0x008000b2        0x0 ./2_HAL/Seven_segment/Seven_segment_LK/Seven_segment_CONFIG.o
+ .bss           0x008000b2        0x0 ./2_HAL/Seven_segment/Seven_segment_LK/Seven_segment_PROGRAM.o
+ .bss           0x008000b2        0x0 ./2_HAL/SWITCH/SWITCH_CONFIG.o
+ .bss           0x008000b2        0x0 ./2_HAL/SWITCH/SWITCH_PROGRAM.o
+ .bss           0x008000b2        0x0 ./2_HAL/LED/LED_CONFIG.o
+ .bss           0x008000b2        0x0 ./2_HAL/LED/LED_PROGRAM.o
+ .bss           0x008000b2        0x0 ./1_MCAL/DIO/DIO_PROGRAM.o
+ .bss           0x008000b2        0x0 a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+ .bss           0x008000b2        0x0 a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x008000b2        0x0 a:/03- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ *(.bss*)
+ *(COMMON)
+                0x008000b2                PROVIDE (__bss_end, .)
+                0x0000291c                __data_load_start = LOADADDR (.data)
+                0x0000296e                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008000b2        0x0
+                0x008000b2                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008000b2                PROVIDE (__noinit_end, .)
+                0x008000b2                _end = .
+                0x008000b2                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x25ec
+ *(.stab)
+ .stab          0x00000000      0x504 ./3_APP/App_1/App.o
+ .stab          0x00000504      0x240 ./2_HAL/Seven_segment/Seven_segment_LK/Seven_segment_CONFIG.o
+                                0x24c (size before relaxing)
+ .stab          0x00000744      0x774 ./2_HAL/Seven_segment/Seven_segment_LK/Seven_segment_PROGRAM.o
+                                0x8ac (size before relaxing)
+ .stab          0x00000eb8      0x234 ./2_HAL/SWITCH/SWITCH_CONFIG.o
+                                0x240 (size before relaxing)
+ .stab          0x000010ec      0x27c ./2_HAL/SWITCH/SWITCH_PROGRAM.o
+                                0x3b4 (size before relaxing)
+ .stab          0x00001368      0x234 ./2_HAL/LED/LED_CONFIG.o
+                                0x240 (size before relaxing)
+ .stab          0x0000159c      0x3f0 ./2_HAL/LED/LED_PROGRAM.o
+                                0x528 (size before relaxing)
+ .stab          0x0000198c      0xc60 ./1_MCAL/DIO/DIO_PROGRAM.o
+                                0xc6c (size before relaxing)
+
+.stabstr        0x00000000     0x15c6
+ *(.stabstr)
+ .stabstr       0x00000000     0x15c6 ./3_APP/App_1/App.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(lab1.elf elf32-avr)
+LOAD linker stubs
